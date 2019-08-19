@@ -8,21 +8,15 @@ class Question
     @answer = adder1 + adder2
   end
 
-  def ask_player(i, player1, player2)
+  def ask_player(i)
     puts "----- New TURN -----"
     puts "Player #{i%2 +1}: #{question} "
     ans = gets.chomp()
     if (ans.to_i == answer)
-      puts "Player #{i%2 +1}: YES! You are correct. "
+      return true
     else
-      puts "Player #{i%2 +1}: Seriously? No! "
-      if (i%2==0)
-        player1.remove_life
-      else
-        player2.remove_life
-      end
+      return false
     end
-    puts "P1: #{player1.score}/3 vs P2: #{player2.score}/3 "
   end
 
 end
