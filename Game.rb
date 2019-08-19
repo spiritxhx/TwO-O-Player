@@ -33,9 +33,11 @@ class Game
   end
   
   def game_over(message)
-    puts "#{message[0]} wins with a score of #{message[1]}/3 "
-    puts "----- GAME OVER -----"
-    puts "Good bye!"
+    if message
+      puts "#{message[0]} wins with a score of #{message[1]}/3 "
+      puts "----- GAME OVER -----"
+      puts "Good bye!"
+    end
   end
 
 end
