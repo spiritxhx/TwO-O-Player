@@ -24,16 +24,16 @@ class Game
 
   def game_over?(player1, player2)
     if (player1.dead?)
-      return "Player 2 wins with a score of #{player2.score}/3"
+      return ["Player 2", player2.score]
     elsif (player2.dead?)
-      return "Player 1 wins with a score of #{player1.score}/3"
+      return ["Player 1", player1.score]
     else
       return false
     end
   end
   
   def game_over(message)
-    puts "#{message} "
+    puts "#{message[0]} wins with a score of #{message[1]}/3 "
     puts "----- GAME OVER -----"
     puts "Good bye!"
   end
