@@ -1,8 +1,8 @@
-class player
+class Player
   attr_accessor :score
 
-  def initialize(score)
-    @score=score
+  def initialize
+    @score=3
   end
 
 end
