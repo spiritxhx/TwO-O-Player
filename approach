@@ -1,6 +1,10 @@
-class player
+class Player
 scores
 
-class game
+class Game
 player_1
 player_2
+
+class Question
+question
+answer
