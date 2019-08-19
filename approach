@@ -1,0 +1,6 @@
+class player
+scores
+
+class game
+player_1
+player_2
